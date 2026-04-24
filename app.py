@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify, send_from_directory
 import os
 import zipfile
 import subprocess
@@ -731,4 +731,4 @@ if __name__ == "__main__":
     ╚══════════════════════════════════════════╝
     """)
     
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host="0.0.0.0", port=port))
